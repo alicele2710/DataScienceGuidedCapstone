@@ -22,10 +22,11 @@ We have gained a baseline idea of performance by taking the average price (MAE $
 
 We built a linear model which works better on the train set than on the test set. We suspected that the model was overfitting.
 
-We then used grid search to find the optimal number of features. Vertical drop was the biggest positive feature, and Tram/SkiableTerrain_ac were the biggest negative features. The estimate of its performance from cross-validation was 10.5 with 1.6 standard deviation. The test split was consistent with this estimate (MAE = 11.8)
+We then used grid search to find the optimal number of features. Vertical drop was the biggest positive feature, and Tram/SkiableTerrain_ac were the biggest negative features. The estimate of its performance from cross-validation was 10.5 with 1.6 standard deviation. The test split was consistent with this estimate (MAE = 11.8)<br>
+<img width="419" alt="image" src="https://user-images.githubusercontent.com/70331438/224583561-9a231247-d244-4f78-9e72-ec6b401d6f5a.png"><br>
 
 We also built a random forest model and tried out different number of trees, imputing strategies, and doing/not doing feature scaling. The estimate of its performance from cross-validation was 9.6 with 1.4 standard deviation. The test split was consistent with this estimate (MAE = 9.5)
-
+<br><img width="405" alt="image" src="https://user-images.githubusercontent.com/70331438/224583624-98563975-0311-4071-a64e-23955a18daa1.png"><br>
 We decided to go ahead with the 2nd model which had a better performance overall (smaller MEA and standard deviation) and performed better on the test set.
 
 ## 4. Modeling
